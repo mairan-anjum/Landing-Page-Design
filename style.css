@@ -745,6 +745,76 @@ p {
     gap: 2rem;
 }
 
+/* Footer */
+footer{
+    background-color: #2F1893;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2.75rem 0rem;
+}
+.footer_main{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap:2.75rem;
+}
+.footer_part1{
+    display: flex;
+}
+.footer_h4{
+    flex: 2;
+}
+.footer_h4>h4{
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+letter-spacing: -0.292683px;
+color: #FFFFFF;
+}
+.footer_link{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.875rem;
+}
+.footer_link>a{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+.footer_part2{
+    display: flex;
+}
+.footer_link2{
+    flex: 2;
+    display: flex;
+    gap:1.688rem;
+}
+.footer_link2>a{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+.footer_p{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_p>p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+}
+.footer_line>hr{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 /*For mobile Version */
 @media only screen and (max-width: 600px) and (min-width: 280px) {
     .navbar {
@@ -918,5 +988,42 @@ p {
 
     .section8_title>h1 {
         font-size: 2rem;
+    }
+
+    /* Section 9 */
+    .section9 {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+
+    /* Footer */
+    footer{
+        padding: 2.2rem 1rem 1rem 1rem;
+    }
+    .footer_part1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .footer_main{
+        width: 100%;
+        gap:2rem;
+    }
+    .footer_link{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer_part2{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .footer_link2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer_p{
+        justify-content: center;
     }
 }
